@@ -1,13 +1,20 @@
-import Button from '../Button/Button'
+import { useState } from 'react'
 import './QuestionWindow.css'
 
 function QuestionWindow(){
+
+    const [displayText,SetDisplayText] = useState('Вы макак?')
+
+    const triggerWindow = () => {
+        SetDisplayText('Спасиб)')
+    }
+
     return(
     <div className='question-div'>
-        <p>are you bibizyan?</p>
+        <p>{displayText}</p>
         <div className='buttons'>
-            <Button buttonItem ='da'/>
-            <Button buttonItem ='ne'/>
+            <button onClick={triggerWindow}>da</button>
+            <button>net</button>
         </div>
     </div>
     )
