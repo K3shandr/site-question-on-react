@@ -1,15 +1,21 @@
 .question-div {
     width: 350px;
     height: 350px;
-    background-color: rgb(160, 40, 122);
+    background-color: none;
     border-radius: 25% 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 2px solid white;
+
 }
 
 .buttons {
     display: flex;
     gap: 20px;
+}
+
+p {
+    font-size: 36px
 }

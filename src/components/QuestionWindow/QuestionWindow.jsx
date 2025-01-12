@@ -5,7 +5,7 @@ function QuestionWindow({flag}){
     if (flag == 1) {
         return (
             <>
-                <p>Спасибо за честни ответ</p>
+                <p>Верю</p>
             </>
         )
     }
@@ -15,7 +15,13 @@ function QuestionWindow({flag}){
             <p>Врешь</p>
             </>
         )
-    }
+    } 
+
+    return (
+        <>
+            <p>Вы манки?</p>
+            </>
+    )
 
 
 }
